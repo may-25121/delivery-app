@@ -20,7 +20,7 @@
   <header>
     <div class="container">
       <div class="row justify-content-between aling-items-center">
-        <div class="col-auto">
+        <div class="col-auto d-flex align-items-center">
           <h1>MyOrderNow</h1>
         </div>
         <div class="col-auto">
@@ -57,10 +57,13 @@
       <div class="search-container">
         <form action="">
           <input type="text" name="searchInput" id="searchInput">
+          <div class="d-grid gap-2">
           <button type="button" class="btn btn-primary d-block">Buscar</button>
+        </div>
         </form>
       </div>
       <div class="products-list-container">
+        <h2 class="section-title">Los más pedidos</h2>
         <ul >
           <li>
             <a href="#">
@@ -177,6 +180,12 @@
             </a>
           </li>   
         </ul>
+        <div class="pt-4 pb-5 text-center">
+          <a href="#" class="btn btn-block btn-link">
+            <span class="d-block mb-2">Ver más productos</span>
+            <i class="fas fa-arrow-down"></i>
+          </a>
+        </div>
       </div>
     </div>
 
