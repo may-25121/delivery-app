@@ -1,56 +1,190 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Order Now - App</title>
-    <!-- Fuentes de letras -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
-    <!-- Mis estilos CSS -->
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/styles.css">
-    <!-- CDN CSS font-awesome -->
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Order Now - App</title>
+  <!-- Fuentes de letras -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <!-- Mis estilos CSS -->
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <!-- CDN CSS font-awesome -->
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
 </head>
+
 <body>
-    <header>
-        <div class="container">
-            <div class="row justify-content-between aling-items-center">
-                <div class="col-auto">
-                    <h1>MyOrderNow</h1>
-                </div>
-                <div class="col-auto">
-                    <div class="avatar-container" data-bs-toggle="modal" data-bs-target="#profileOptions">
-                        <img src="img/avatar.jpg" alt="">
-                        <i class="fas fa-cog"></i>
-                    </div>
-                </div>
-            </div>
+  <header>
+    <div class="container">
+      <div class="row justify-content-between aling-items-center">
+        <div class="col-auto">
+          <h1>MyOrderNow</h1>
         </div>
-  
-        <div class="modal fade profile-options-modal" id="profileOptions" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title" id="exampleModalLabel">Opciones</h5>
-                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                  <ul class="profile-options-list">
-                      <li><a href="#"><i class="fas fa-user"></i>Mi perfil</a></li>
-                      <li><a href="#"><i class="fas fa-map-marker-alt"></i>Mis direcciones</a></li>
-                      <li><a href="#"><i class="fas fa-credit-card"></i>Mis tarjetas</a></li>
-                      <li><a href="#" class="text-danger"><i class="fas fa-times-circle"></i>Cerrar sesión</a></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
+        <div class="col-auto">
+          <div class="avatar-container" data-bs-toggle="modal" data-bs-target="#profileOptions">
+            <img src="img/avatar.jpg" alt="">
+            <i class="fas fa-cog"></i>
           </div>
-    </header>
-    
-    <script src="js/jquery.js"></script>
-    <script src="js/popper.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade profile-options-modal" id="profileOptions" tabindex="-1" aria-labelledby="exampleModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Opciones</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <ul class="profile-options-list">
+              <li><a href="#"><i class="fas fa-user"></i>Mi perfil</a></li>
+              <li><a href="#"><i class="fas fa-map-marker-alt"></i>Mis direcciones</a></li>
+              <li><a href="#"><i class="fas fa-credit-card"></i>Mis tarjetas</a></li>
+              <li><a href="#" class="text-danger"><i class="fas fa-times-circle"></i>Cerrar sesión</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main class="main">
+    <div class="container">
+      <div class="search-container">
+        <form action="">
+          <input type="text" name="searchInput" id="searchInput">
+          <button type="button" class="btn btn-primary d-block">Buscar</button>
+        </form>
+      </div>
+      <div class="products-list-container">
+        <ul >
+          <li>
+            <a href="#">
+              <div class="product-image">
+                <img src="img/producto1.jpg" alt="">
+              </div>
+              <div class="product-info">
+                <div class="product-info-inner">
+                  <div class="tags">
+                    <span>Descuento</span><span>Envío gratis</span>
+                  </div>
+                  <h3 class="product-name">Burrito especial</h3>
+                  <p class="restaurant">Restaurante de prueba</p>
+                  <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+                </div>
+                <p class="product-price"><span>$</span>14,99</p>
+              </div>
+            </a>
+          </li>   
+          <li>
+            <a href="#">
+              <div class="product-image">
+                <img src="img/producto2.jpg" alt="">
+              </div>
+              <div class="product-info">
+                <div class="product-info-inner">
+                  <div class="tags">
+                    <span>2x1 Descuento 50%</span><span>Envío gratis</span>
+                  </div>
+                  <h3 class="product-name">Postre de la casa</h3>
+                  <p class="restaurant">Restaurante de prueba</p>
+                  <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+                </div>
+                <p class="product-price"><span>$</span>6,99</p>
+              </div>
+            </a>
+          </li>   
+          <li>
+            <a href="#">
+              <div class="product-image">
+                <img src="img/producto3.jpg" alt="">
+              </div>
+              <div class="product-info">
+                <div class="product-info-inner">
+                  <div class="tags">
+                    <span>2x1 Envío gratisDescuenti</span><span>Envío gratis</span>
+                  </div>
+                  <h3 class="product-name">Salmón</h3>
+                  <p class="restaurant">Restaurante de prueba</p>
+                  <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+                </div>
+                <p class="product-price"><span>$</span>21,47</p>
+              </div>
+            </a>
+          </li>   
+          <li>
+            <a href="#">
+              <div class="product-image">
+                <img src="img/producto4.jpg" alt="">
+              </div>
+              <div class="product-info">
+                <div class="product-info-inner">
+                  <div class="tags">
+                    <span></span><span>Envío gratis</span>
+                  </div>
+                  <h3 class="product-name">Donas glaseadas x6</h3>
+                  <p class="restaurant">Restaurante de prueba</p>
+                  <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+                </div>
+                <p class="product-price"><span>$</span>9,99</p>
+              </div>
+            </a>
+          </li>   
+          <li>
+            <a href="#">
+              <div class="product-image">
+                <img src="img/producto1.jpg" alt="">
+              </div>
+              <div class="product-info">
+                <div class="product-info-inner">
+                  <div class="tags">
+                    <span>Descuento</span><span>Envío gratis Combo</span>
+                  </div>
+                  <h3 class="product-name">Mega hamburguesa</h3>
+                  <p class="restaurant">Restaurante de prueba</p>
+                  <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+                </div>
+                <p class="product-price"><span>$</span>15,99</p>
+              </div>
+            </a>
+          </li>   
+        </ul>
+      </div>
+    </div>
+
+  </main>
+
+  <script src="js/jquery.js"></script>
+  <script src="js/popper.js"></script>
+  <script src="js/bootstrap.min.js"></script>
 </body>
+
 </html>
