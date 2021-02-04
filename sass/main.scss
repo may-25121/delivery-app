@@ -85,29 +85,31 @@ header{
         }
     }
 
-    .profile-options-modal{
-        
-        .profile-options-list{
-            padding: 0;
-            margin: 0;
-            list-style: none;
 
-            li{
-                a{
-                    display: block;
-                    padding: 10px 0;
-                    color: $black2;
-                    i{
-                        display: inline-block;
-                        width: 18px;
-                        text-align: center;
-                        margin-right: 5px;
-                    }
+}
+
+.profile-options-modal{
+        
+    .profile-options-list{
+        padding: 0;
+        margin: 0;
+        list-style: none;
+
+        li{
+            a{
+                display: block;
+                padding: 10px 0;
+                color: $black2;
+                i{
+                    display: inline-block;
+                    width: 18px;
+                    text-align: center;
+                    margin-right: 5px;
                 }
             }
-
-
         }
+
+
     }
 }
 // Main
